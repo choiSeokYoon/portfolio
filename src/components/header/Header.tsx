@@ -12,6 +12,7 @@ export default function Header() {
                 <ul className='menu'>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li>
+                    <li><Link to="/skill">Skill</Link></li>
                     <li><Link to="/project">Project</Link></li>
                 </ul>
             </div>

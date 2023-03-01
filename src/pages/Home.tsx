@@ -1,9 +1,11 @@
-import React from 'react'
+
+import { useRecoilValue } from 'recoil'
 
 export default function Home() {
-  return (
-    <div>
-        
-    </div>
-  )
+    
+    return (
+        <div>
+            
+        </div>
+    )
 }
