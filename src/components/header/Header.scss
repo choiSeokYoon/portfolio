@@ -1,0 +1,34 @@
+.header{
+    
+    border-bottom: 1px solid #fff;
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        .logo{
+            h2{
+                font-size: 3rem;
+            }
+        }
+        .menu{
+            display: flex;
+            
+            li{
+                
+                
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1.6rem;
+                    padding: 1rem 2rem;
+                    &:hover{
+                        background: #fff;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}  
+    
