@@ -28,6 +28,7 @@ export default function About() {
                 <p>학점은행제 2022.09 ~ //진행중 (컴퓨터 공학)</p>
                 <p>국비학원 2022.10 ~ //진행중 </p>
               </motion.li>
+              
               <motion.li variants={showHideChild}>
                 <fieldset className='skill'>
                   <legend className='sub_title'>

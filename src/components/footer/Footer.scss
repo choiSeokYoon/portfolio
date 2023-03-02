@@ -2,5 +2,22 @@
     height: 50px;
     width: 100%;
     background: #fff;
+    padding:0 100px;
+    box-sizing: border-box;
+    .footer_box{
+        font-size: 1rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
 
+        .sns{
+            a{
+                img{
+                    width: 30px;
+                    height: 30px;
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
 }
