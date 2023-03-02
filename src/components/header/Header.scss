@@ -1,6 +1,8 @@
 .header{
-    
+    position: fixed;
     border-bottom: 1px solid #fff;
+    background: #fff;
+    width: 100%;
     .nav{
         display: flex;
         justify-content: space-between;
@@ -19,12 +21,12 @@
                 
                 a{
                     text-decoration: none;
-                    color: #fff;
+                    color: #000;
                     font-size: 1.6rem;
                     padding: 1rem 2rem;
                     &:hover{
-                        background: #fff;
-                        color: #000;
+                        background: #000;
+                        color: #fff;
                     }
                 }
             }
