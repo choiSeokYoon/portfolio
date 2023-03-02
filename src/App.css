@@ -1,8 +1,6 @@
 .container{
   width: 1700px;
   margin: 0 auto;
-  height: 100vh;
-  background: #FFFFE8;
 }
 @media screen and (max-width: 1700px){
   .container{
@@ -10,7 +8,7 @@
   }
 }
 body{
-
+  
   /* background: #282c34;
   color: #fff; */
 }

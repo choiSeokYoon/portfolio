@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import './App.css'
 import Project from './pages/Project';
 import Skill from './pages/Skill';
+import Footer from './components/footer/Footer';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='/project' element={<Project/>}/>
         </Routes>
       </RecoilRoot>
+      <Footer/>
     </BrowserRouter>
   );
 }

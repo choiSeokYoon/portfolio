@@ -12,6 +12,23 @@ import swiperImg from '../assets/skills/swiper_logo.png'
 import typescriptImg from '../assets/skills/typescript_icon.png'
 import vsCodeImg from '../assets/skills/visual_studio_code_icon.png'
 import vueImg from '../assets/skills/vue_icon.png'
+import recoilImg from '../assets/skills/recoil_icon.svg'
+
+
+/* import {SiJavascript, SiExpress, SiReact,SiVuedotjs,SiGithub} from 'react-icons/si'
+
+import githubImg from 'react-icons/si'
+import mongoodbImg from 'react-icons/si'
+import nodeImg from 'react-icons/si'
+import postmanImg from '../assets/skills/postman_icon.png'
+import reactImg from '../assets/skills/react_icon.png'
+import sassImg from '../assets/skills/sass_icon.png'
+import swiperImg from '../assets/skills/swiper_logo.png'
+import typescriptImg from '../assets/skills/typescript_icon.png'
+import vsCodeImg from '../assets/skills/visual_studio_code_icon.png'
+import vueImg from '../assets/skills/vue_icon.png'
+import recoilImg from '../assets/skills/recoil_icon.svg' */
+
 
 export const recoilSkill = atom<ISkill[]>({
     key: "recoilSkill",
@@ -31,6 +48,10 @@ export const recoilSkill = atom<ISkill[]>({
         {
             name:"REACT",
             imgUrl: reactImg
+        },
+        {
+            name:"RECOIL",
+            imgUrl: recoilImg
         },
         {
             name:"VUE",
