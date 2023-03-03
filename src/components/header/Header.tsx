@@ -7,7 +7,7 @@ export default function Header() {
         <div className='container'>
             <div className='nav'>
                 <div className='logo'>
-                    <h2>SY's</h2>
+                    <h2><Link to="/">SY's</Link></h2>
                 </div>
                 <ul className='menu'>
                     <li><Link to="/">Home</Link></li>

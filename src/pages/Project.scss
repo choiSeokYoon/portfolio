@@ -1,0 +1,43 @@
+.project{
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    box-sizing: border-box;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-direction: column;
+    .project_tab{
+        padding: 3rem 0;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        
+        li{
+            padding: 1rem;
+            cursor: pointer;
+            &:hover{
+                background: #000;
+                color: #fff;
+            }
+            &.active{
+                background: #000;
+                color: #fff;
+            }
+        }
+    }
+    .project_list{
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        text-align: center;
+        li{
+            img{
+                width: 200px;
+                height: 250px;
+            }
+        }
+    }
+}
+
