@@ -17,7 +17,7 @@ export const recoilProjects = atom<IProject[]>({
             imgUrl: MyProject3,
             name:"세번째 프로젝트",
             period:"23.02.20 ~ 23.02.20",
-            tag:"개인",
+            tag:"Individual",
             descriptions: [
                 "어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
                 "어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구ㅈㅇㅁㄴㅇㅁㄴㅇ"
@@ -30,7 +30,7 @@ export const recoilProjects = atom<IProject[]>({
             imgUrl: MyProject3,
             name:"세번째 프로젝트",
             period:"23.02.20 ~ 23.02.20",
-            tag:"개인",
+            tag:"Individual",
             descriptions: [
                 "어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
                 "어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구ㅈㅇㅁㄴㅇㅁㄴㅇ"
@@ -43,7 +43,7 @@ export const recoilProjects = atom<IProject[]>({
             imgUrl: MyProject3,
             name:"세번째 프로젝트",
             period:"23.02.20 ~ 23.02.20",
-            tag:"개인",
+            tag:"Individual",
             descriptions: [
                 "어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
                 "어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구ㅈㅇㅁㄴㅇㅁㄴㅇ"
@@ -56,7 +56,7 @@ export const recoilProjects = atom<IProject[]>({
             imgUrl: MyProject3,
             name:"세번째 프로젝트",
             period:"23.02.20 ~ 23.02.20",
-            tag:"개인",
+            tag:"Individual",
             descriptions: [
                 "어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
                 "어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구ㅈㅇㅁㄴㅇㅁㄴㅇ"
@@ -66,10 +66,10 @@ export const recoilProjects = atom<IProject[]>({
         },
         {
             id:5,
-            imgUrl: MyProject4,
+            imgUrl: MyProject3,
             name:"세번째 프로젝트",
             period:"23.02.20 ~ 23.02.20",
-            tag:"학원",
+            tag:"Academy",
             descriptions: [
                 "어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
                 "어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구ㅈㅇㅁㄴㅇㅁㄴㅇ"
@@ -82,7 +82,7 @@ export const recoilProjects = atom<IProject[]>({
             imgUrl: MyProject3,
             name:"세번째 프로젝트",
             period:"23.02.20 ~ 23.02.20",
-            tag:"학원",
+            tag:"Academy",
             descriptions: [
                 "어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
                 "어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구ㅈㅇㅁㄴㅇㅁㄴㅇ"

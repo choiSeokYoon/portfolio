@@ -11,7 +11,6 @@ import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    
     <BrowserRouter>
       <Header/>
       <RecoilRoot>

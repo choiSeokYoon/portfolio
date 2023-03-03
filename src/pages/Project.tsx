@@ -13,10 +13,10 @@ export default function Project() {
   const [active, setActive] = useState(0)
   const [modal, setModal] = useState(false)
   const [post, setPost] = useState(null)
-  const [category, setCategory] = useState("전체")
+  const [category, setCategory] = useState("ALL")
   //"downlevelIteration": true es5 이하의 자바스크립트로 변환(set)
  //tsconfig.json 갑자기 변환이 안돼서 Array.from 를 사용해서 set을 배열로 변환하고 확산 연산자로 가져옴
-  const categories = ["전체", ...new Set(Array.from(projects, item => item.tag))]
+  const categories = ["ALL", ...new Set(Array.from(projects, item => item.tag))]
   
   const handleModal = () => {
     setModal(!modal)
@@ -28,7 +28,7 @@ export default function Project() {
 
   
   const filterCategory = 
-  category === "전체"
+  category === "ALL"
     ? projects
     : projects.filter(item => item.tag === category)
 
