@@ -1,12 +1,19 @@
 import { atom } from 'recoil';
 import {IProject } from '../types/project.type'
 import MyProject3 from '../assets/project3.png'
+import MyProject4 from '../assets/project4.png'
 
+
+export const recoilModal = atom({
+    key:"recoilModal",
+    default: false
+})
 
 export const recoilProjects = atom<IProject[]>({
     key: "recoilProjects",
     default: [
-        {
+        {   
+            id:1,
             imgUrl: MyProject3,
             name:"세번째 프로젝트",
             period:"23.02.20 ~ 23.02.20",
@@ -19,6 +26,7 @@ export const recoilProjects = atom<IProject[]>({
             skill:["React" , "recoil" , "express", "mongoDB"]
         },
         {
+            id:2,
             imgUrl: MyProject3,
             name:"세번째 프로젝트",
             period:"23.02.20 ~ 23.02.20",
@@ -31,6 +39,7 @@ export const recoilProjects = atom<IProject[]>({
             skill:["React" , "recoil" , "express", "mongoDB"]
         },
         {
+            id:3,
             imgUrl: MyProject3,
             name:"세번째 프로젝트",
             period:"23.02.20 ~ 23.02.20",
@@ -43,6 +52,7 @@ export const recoilProjects = atom<IProject[]>({
             skill:["React" , "recoil" , "express", "mongoDB"]
         },
         {
+            id:4,
             imgUrl: MyProject3,
             name:"세번째 프로젝트",
             period:"23.02.20 ~ 23.02.20",
@@ -55,7 +65,8 @@ export const recoilProjects = atom<IProject[]>({
             skill:["React" , "recoil" , "express", "mongoDB"]
         },
         {
-            imgUrl: MyProject3,
+            id:5,
+            imgUrl: MyProject4,
             name:"세번째 프로젝트",
             period:"23.02.20 ~ 23.02.20",
             tag:"학원",
@@ -67,6 +78,7 @@ export const recoilProjects = atom<IProject[]>({
             skill:["React" , "recoil" , "express", "mongoDB"]
         },
         {
+            id:6,
             imgUrl: MyProject3,
             name:"세번째 프로젝트",
             period:"23.02.20 ~ 23.02.20",

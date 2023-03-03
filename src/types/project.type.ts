@@ -1,4 +1,5 @@
 export interface IProject {
+    id:number,
     imgUrl:string,
     name: string,
     period:string,
@@ -8,3 +9,7 @@ export interface IProject {
     skill:string[]
 }
 
+export interface ModalProps {
+    modal: boolean;
+    handleModal: () => void;
+  }

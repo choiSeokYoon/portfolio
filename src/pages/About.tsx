@@ -16,25 +16,33 @@ export default function About() {
               <motion.h2 variants={showHideChild}>⚽ABOUT ME⚽</motion.h2>
             </div>
             <ul className='introduction'>
-              <motion.li className='about_me' variants={showHideChild}>
-                <h3 className='sub_title'>- about me</h3>
-                <p>안녕하세요 저는 프론트엔드 개발자가 되고 싶은 최석윤입니다. 시간을 내어 제 포트폴리오를 봐주셔서 감사합니다.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-              </motion.li>
-              <motion.li className='education' variants={showHideChild}>
+              <div className='about_text'>
+                <motion.li className='about_me' variants={showHideChild}>
+                  <h3 className='sub_title'>- about me</h3>
+                  <div className='introduction_text'>
+                    <p>안녕하세요 저는 프론트엔드 개발자가 되고 싶은 최석윤입니다. 시간을 내어 제 포트폴리오를 봐주셔서 감사합니다.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                </motion.li>
+                <motion.li className='education' variants={showHideChild}>
                 <h3 className='sub_title'>- education</h3>
-                <p>대진대학교 2014.03 ~ 2016.02＃중퇴 (작곡과)</p>
-                <p>학점은행제 2022.09 ~ //진행중 (컴퓨터 공학)</p>
-                <p>국비학원 2022.10 ~ //진행중 </p>
-              </motion.li>
+                  <div className='education_text'>
+                    <p>대진대학교 2014.03 ~ 2016.02＃중퇴 (작곡과)</p>
+                    <p>학점은행제 2022.09 ~ //진행중 (컴퓨터 공학)</p>
+                    <p>국비학원 2022.10 ~ //진행중 </p>
+                  </div>
+                
+                </motion.li>
+              </div>
+             
               
               <motion.li variants={showHideChild}>
-                <fieldset className='skill'>
-                  <legend className='sub_title'>
+                <div className='tool'>
+                  <h3>
                     skill
-                  </legend>
-                    <ul className='skill_box'>
+                  </h3>
+                    <ul>
                     {skills.map((skill, idx)=>(
                       <li key={idx}>
                         <img src={skill.imgUrl} alt="" />
@@ -42,14 +50,14 @@ export default function About() {
                       </li>
                       ))}
                     </ul>
-                </fieldset>
+                </div>
               </motion.li>
               <motion.li variants={showHideChild}>
-                <fieldset className='skill'>
-                  <legend className='sub_title'>
+                <div className='skill'>
+                  <h3>
                     tool
-                  </legend>
-                    <ul className='skill_box'>
+                  </h3>
+                    <ul>
                     {tools.map((tool,idx)=>(
                       <li key={idx}>
                         <img src={tool.imgUrl} alt="" />
@@ -57,7 +65,7 @@ export default function About() {
                       </li>
                       ))}
                     </ul>
-                </fieldset>
+                </div>
               </motion.li>
             </ul>
             
