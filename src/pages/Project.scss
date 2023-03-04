@@ -1,49 +1,93 @@
-.project{
+.project {
     width: 100%;
     height: 100%;
     padding-top: 100px;
     box-sizing: border-box;
     display: flex;
-    
     flex-direction: column;
-    .project_tab{
-        padding-top:2rem;
+    .title{
+        margin-top: 20px;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 4rem;
+    }
+    .project_tab {
+      padding-top: 2rem;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      border-bottom: 2px solid #000;
+      
+      li {
+        padding: .8rem 2rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         font-size: 1.2rem;
+        cursor: pointer;
+        
+        &:hover {
+          font-weight: bold;
+        }
+        
+        &.active {
+          background: #000;
+          color: #fff;
+        }
+      }
+    }
+    
+    .project_list {
+      height: 600px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      padding: 2rem 0;
+      @media screen and (max-width:1000px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+      @media screen and (max-width:700px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+      }
+      li {
+        position: relative;
         display: flex;
         justify-content: center;
-        border-bottom: 2px solid #000;
-        
-        li{
-            padding: .8rem 2rem ;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            font-size: 1.2rem;
+        align-items: center;
+        img {
+            width: 90%;
+            height: 250px;
+            filter: brightness(100%);
+            transition: filter 0.3s ease-in-out;
             cursor: pointer;
-            
-            &:hover{
-            
-                font-weight: bold;
-            }
-            &.active{
-                background: #000;
-                color: #fff;
-            }
         }
-    }
-    .project_list{
-        height: 600px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
         
-        text-align: center;
-        padding: 2rem 0;
-        li{
-            img{
-                width: 90%;
-                height: 250px;
+        .img_text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0; 
+            font-size: 1.8rem;
+            transition: opacity 0.3s ease-in-out;
+            color: #fff;
+            cursor: pointer;
+            &:hover ~ img {
+                filter: brightness(100%); 
             }
         }
+        &:hover .img_text {
+            opacity: 1;
+            
+            
+        }
+        
+        &:hover img {
+            filter: brightness(30%);
+        }
+        }
     }
-}
-
-
+  }
+  

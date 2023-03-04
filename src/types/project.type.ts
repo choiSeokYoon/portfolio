@@ -6,6 +6,7 @@ export interface IProject {
     tag:string,
     descriptions:string[],
     gitUrl:string,
+    webUrl:string,
     skill:string[]
 }
 

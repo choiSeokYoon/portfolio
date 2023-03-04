@@ -7,6 +7,10 @@
     padding-left: 100px;
     padding-right: 100px;
     flex-direction: column;
+    @media screen and (max-width:700px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .about_title{
         margin-top: 20px;
         font-size: 2rem;
@@ -18,9 +22,13 @@
         }
     }
     .introduction{
+        
         .about_text{
             position: relative;
             display: flex;
+            @media screen and (max-width:1000px) {
+                flex-direction: column;
+            }
             .about_me{
             flex: 50%;
                 h3{  
@@ -28,25 +36,30 @@
                 }
                 .introduction_text{
                     padding: 1.5rem;
+                    
                     p{
                         font-size: .9rem;
                         line-height: 200%;
+                        @media screen and (max-width:700px) {
+                            font-size: .7rem;
+                        }
+                        
                     }
                 }
                 
             }
-            
             .education{
                 flex: 50%;
-                
-                
                 h3{
                 }
                 .education_text{
                     padding: 1.5rem;
                     p{
                         font-size: .9rem;
-                        line-height: 200%;   
+                        line-height: 200%;
+                        @media screen and (max-width:700px) {
+                            font-size: .7rem;
+                        }
                     }
                 }
                 
@@ -68,6 +81,14 @@
                 grid-template-columns: repeat(7, 1fr);
                 gap: 2rem;
                 text-align: center;
+                @media screen and (max-width:1000px) {
+                    grid-template-columns: repeat(5, 1fr)
+                    
+                }
+                @media screen and (max-width:1000px) {
+                    grid-template-columns: repeat(3, 1fr)
+                    
+                }
                 img{
                     width: 50px;
                     height: 50px;  

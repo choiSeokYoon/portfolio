@@ -4,31 +4,135 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
-    
+    @media screen and (max-width:1200px) {
+        .modal_container::-webkit-scrollbar{
+          display: none;
+        }
+    }
     .modal_container {
-      background-color: white;
+      background-color: #fff;
       position: relative;
       border-radius: 10px;
       padding: 20px;
-      width: 700px;
-      height: 700px;
+      width: 80%;
+      height: 70%;
       overflow: auto;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
       z-index: 10;
+      @media screen and (max-width:800px) {
+        width: 90%;
+    }
       .remove{
+        cursor: pointer;
         position: absolute;
         z-index: 11;
-        top: 0;
-        right: 0;
-        font-size: 2.2rem;
-        color: red;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        color: #fff;
         font-weight: bold;
-    }
+        background: #000;
+        padding: .3rem .8rem;
+        border-radius: 50%;
+      }
+      .modal_project{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        @media screen and (max-width:1200px) {
+          flex-direction: column;
+        }
+        .modal_left{
+          flex: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 7rem 0;
+          @media screen and (max-width:1200px) {
+            padding: 2rem 0;
+          }
+          img{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .madal_right{
+          flex: 50%;
+          padding: 3rem 2rem;
+          box-sizing: border-box;
+          .modal_title{
+            font-size: 1.8rem;
+            font-weight: bold;
+            padding: 1rem 0;
+          }
+          .modal_period{
+            font-size: 1.2rem;
+            padding: 1rem 0;
+          }
+          .modal_skill{
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+            @media screen and (max-width:1200px) {
+              flex-direction: column;
+            }
+            h4{
+              font-weight: 600;
+              padding-bottom: 1rem;
+            }
+            div{
+              display: flex;
+              flex-wrap: wrap;
+              gap: 1rem;
+              justify-content: center;
+              p{
+                padding: 0 .5rem;
+                
+              }
+            }
+            
+          }
+          .modal_descriptions{
+            margin-bottom: 2rem;
+            h3{
+              padding: 2rem 0;
+              font-size: 1.2rem;
+              font-weight: 600;
+            }
+            p{
+              text-align: left;
+              font-size: 1rem;
+            }
+          }
+          .modal_url{
+            font-size: 1.2rem;
+            text-align: left;
+            @media screen and (max-width:800px) {
+              font-size: .9rem;
+            }
+            a{
+              text-decoration: none;
+              color: blue;
+              font-size: 1rem;
+              @media screen and (max-width:800px) {
+                font-size: .5rem;
+              }
+              &:hover{
+                color: #6e31fa;
+              }
+            }
+          }
+        }
+        
+        
+      }
     }
     
   }
