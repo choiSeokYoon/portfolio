@@ -5,35 +5,29 @@ import { recoilProjects } from './../store/project';
 import { useState } from 'react' 
 import Modal from '../components/modal/Modal';
 
-
-
-
 export default function Project() {
   const projects = useRecoilValue(recoilProjects);
   const [active, setActive] = useState(0)
   const [modal, setModal] = useState(false)
-  const [post, setPost] = useState(null)
   const [category, setCategory] = useState("ALL")
+  const [selectedPostId, setSelectedPostId] = useState<number | null>(null);
   //"downlevelIteration": true es5 이하의 자바스크립트로 변환(set)
  //tsconfig.json 갑자기 변환이 안돼서 Array.from 를 사용해서 set을 배열로 변환하고 확산 연산자로 가져옴
   const categories = ["ALL", ...new Set(Array.from(projects, item => item.tag))]
   
-  const handleModal = () => {
-    setModal(!modal)
+  const handleModal = (postId: number) => {
+    setModal(!modal);
+    setSelectedPostId(postId);
   }
   const handleClick = (idx:number) => {
     setActive(idx)
     setCategory(categories[idx])
   }
-
-  
   const filterCategory = 
   category === "ALL"
     ? projects
     : projects.filter(item => item.tag === category)
 
-   
-  
   return (
     <div className='project'>
       <Slide/>
@@ -47,17 +41,18 @@ export default function Project() {
           ))}
         </ul>
         <ul className='project_list'>
-          {filterCategory.map((project, idx)=>(
-            <li key={idx} onClick={()=>{handleModal()}}>
-              <img src={project.imgUrl} alt="" />
-            </li>
+          {filterCategory.map((project)=>(
+            <>
+              <li key={project.id} onClick={()=>{handleModal(project.id)}}>
+                <img src={project.imgUrl} alt="" />
+              </li>
+              {selectedPostId ===project.id && modal && (
+                <Modal project={project} handleModal={handleModal}/>
+                )
+              }
+            </>
           ))}
         </ul>
-        {modal && (
-            <Modal modal={modal} handleModal={handleModal}/>
-          )
-        }
-        
       </div>
     </div>
   )

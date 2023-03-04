@@ -35,8 +35,6 @@ export default function About() {
                 
                 </motion.li>
               </div>
-             
-              
               <motion.li variants={showHideChild}>
                 <div className='tool'>
                   <h3>

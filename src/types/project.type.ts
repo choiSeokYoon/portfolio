@@ -10,6 +10,7 @@ export interface IProject {
 }
 
 export interface ModalProps {
-    modal: boolean;
-    handleModal: () => void;
+    handleModal: (postId: any) => void;
+    project: IProject;
+    
   }
