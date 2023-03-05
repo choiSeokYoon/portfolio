@@ -41,8 +41,7 @@ export const recoilProjects = atom<IProject[]>({
       tag: "Individual",
       descriptions: [
           "백엔드와 프론트가 어떤식으로 연동되는지 알아가기 위해 만든 프로젝트입니다.",
-          "로그인을 구현하고 하나씩 기능을 추가하는 방식으로 개발되었습니다.",
-          "처음부터 기획한 프로젝트가 아니기 때문에 로그인 기능을 먼저 구현하고 이후에 기능을 하나씩 추가하는 방식으로 개발하는 중이고 이를 통해 단계적인 개발 과정을 경험하고 있습니다."
+          "처음부터 기획한 프로젝트가 아니기 때문에 로그인 기능을 구현하고 이후에 기능을 하나씩 추가하는 방식으로 개발하는 중이고 이를 통해 단계적인 개발 과정을 경험하고 있습니다."
       ],
       gitUrl: "https://github.com/choiSeokYoon/react-express-login",
       webUrl: "https://github.com/choiSeokYoon/choiSeokYoon",
@@ -59,7 +58,7 @@ export const recoilProjects = atom<IProject[]>({
         "이 프로젝트는 공공데이터 API를 사용하여 만든 프로젝트입니다. Recoil을 사용하여 상태 관리를 구현하는데 사용되었습니다.",
         "미디어쿼리를 이용하여 반응형으로 만들어졌습니다.",
         "검색 기능, 카테고리 및 페이지네이션 기능이 구현되어 있습니다. 이를 통해 사용자가 원하는 레시피를 쉽게 찾을 수 있습니다.",
-        "데이터에서 열량이 낮은 순으로 다이어트 음식으로 추천하는 페이지와 디테일 페이지가 있습니다. 이를 통해 사용자는 건강한 식습관을 유지하면서 맛있는 음식을 즐길 수 있습니다.",
+        "데이터에서 열량이 낮은 순으로 다이어트 음식으로 추천하는 페이지와 디테일 페이지가 있습니다. 이를 통해 사용자는 건강한 식습관을 유지하면서 맛있는 음식을 만들 수 있습니다.",
       ],
       gitUrl: "https://github.com/choiSeokYoon/FoodRecipe",
       webUrl: "https://github.com/choiSeokYoon/choiSeokYoon",

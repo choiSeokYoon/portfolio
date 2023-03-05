@@ -32,12 +32,12 @@ export default function Modal({ project, handleModal }: ModalProps) {
                 ))}
               </div>
             </div>
-            <div className="modal_descriptions">
+            <ul className="modal_descriptions">
               <h3>설명</h3>
               {project.descriptions.map((description, idx) => (
                 <p key={idx}>{description}</p>
               ))}
-            </div>
+            </ul>
             <div className="modal_url">
               git: <a href={project.gitUrl}>{project.gitUrl}</a>
               <br />

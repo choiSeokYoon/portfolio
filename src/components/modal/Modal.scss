@@ -107,8 +107,11 @@
               font-weight: 600;
             }
             p{
+              list-style: square;
               text-align: left;
               font-size: 1rem;
+              padding-bottom: .4rem;
+              
             }
           }
           .modal_url{

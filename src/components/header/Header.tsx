@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { motion } from "framer-motion";
 import './Header.scss'
 
 export default function Header() {
@@ -10,9 +11,9 @@ export default function Header() {
                         <h2><Link to="/">SY's</Link></h2>
                     </div>
                     <ul className='menu'>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/project">Project</Link></li>
+                        <motion.li whileHover={{ scale: 1.1 }} transition={{ type: "spring" }}><Link to="/">Home</Link></motion.li>
+                        <motion.li whileHover={{ scale: 1.1 }}  transition={{ type: "spring" }}><Link to="/about">About</Link></motion.li>
+                        <motion.li whileHover={{ scale: 1.1 }}  transition={{ type: "spring" }}><Link to="/project">Project</Link></motion.li>
                     </ul>
                 </div>
             </div>
