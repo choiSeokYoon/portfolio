@@ -13,69 +13,60 @@ import typescriptImg from '../assets/skills/typescript_icon.png'
 import vsCodeImg from '../assets/skills/visual_studio_code_icon.png'
 import vueImg from '../assets/skills/vue_icon.png'
 import recoilImg from '../assets/skills/recoil_icon.svg'
+import jqueryImg from "../assets/skills/jquery_icon.png";
 
 
-/* import {SiJavascript, SiExpress, SiReact,SiVuedotjs,SiGithub} from 'react-icons/si'
-
-import githubImg from 'react-icons/si'
-import mongoodbImg from 'react-icons/si'
-import nodeImg from 'react-icons/si'
-import postmanImg from '../assets/skills/postman_icon.png'
-import reactImg from '../assets/skills/react_icon.png'
-import sassImg from '../assets/skills/sass_icon.png'
-import swiperImg from '../assets/skills/swiper_logo.png'
-import typescriptImg from '../assets/skills/typescript_icon.png'
-import vsCodeImg from '../assets/skills/visual_studio_code_icon.png'
-import vueImg from '../assets/skills/vue_icon.png'
-import recoilImg from '../assets/skills/recoil_icon.svg' */
 
 
 export const recoilSkill = atom<ISkill[]>({
-    key: "recoilSkill",
-    default:[
-        {
-            name:"SASS",
-            imgUrl: sassImg
-        },
-        {
-            name:"JAVASCRIPT",
-            imgUrl: javascriptImg
-        },
-        {
-            name:"TYPESCRIPT",
-            imgUrl: typescriptImg
-        },
-        {
-            name:"REACT",
-            imgUrl: reactImg
-        },
-        {
-            name:"RECOIL",
-            imgUrl: recoilImg
-        },
-        {
-            name:"VUE",
-            imgUrl: vueImg
-        },
-        {
-            name:"NODE",
-            imgUrl: nodeImg
-        },
-        {
-            name:"EXPRESS",
-            imgUrl: expressImg
-        },
-        {
-            name:"MONGODB",
-            imgUrl: mongoodbImg
-        },
-        {
-            name:"SWIPER",
-            imgUrl: swiperImg
-        },
-
-    ]
-})
+  key: "recoilSkill",
+  default: [
+    {
+      name: "SASS",
+      imgUrl: sassImg,
+    },
+    {
+      name: "jquery",
+      imgUrl: jqueryImg,
+    },
+    {
+      name: "JAVASCRIPT",
+      imgUrl: javascriptImg,
+    },
+    {
+      name: "TYPESCRIPT",
+      imgUrl: typescriptImg,
+    },
+    {
+      name: "REACT",
+      imgUrl: reactImg,
+    },
+    {
+      name: "RECOIL",
+      imgUrl: recoilImg,
+    },
+    {
+      name: "VUE",
+      imgUrl: vueImg,
+    },
+    {
+      name: "NODE",
+      imgUrl: nodeImg,
+    },
+    {
+      name: "EXPRESS",
+      imgUrl: expressImg,
+    },
+    {
+      name: "MONGODB",
+      imgUrl: mongoodbImg,
+    },
+    {
+      name: "SWIPER",
+      imgUrl: swiperImg,
+    },
+  ],
+});
 
 export const recoilTool = atom<IToolSkill[]>({
     key: "recoilTool",

@@ -1,11 +1,35 @@
+/* body 스타일 */
+
+::-webkit-scrollbar {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 6px;
+}
+/* 스크롤바 스타일 */
+
+
+/* 컨테이너 스타일 */
 .container{
   width: 1700px;
   margin: 0 auto;
   height: inherit;
 }
+
 @media screen and (max-width: 1700px){
   .container{
     width: 100%;
-    
   }
 }

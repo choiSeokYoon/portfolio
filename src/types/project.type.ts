@@ -7,7 +7,8 @@ export interface IProject {
     descriptions:string[],
     gitUrl:string,
     webUrl:string,
-    skill:string[]
+    skill: string[]
+    feeling:string,
 }
 
 export interface ModalProps {
