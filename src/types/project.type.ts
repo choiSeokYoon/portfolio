@@ -8,11 +8,10 @@ export interface IProject {
     gitUrl:string,
     webUrl:string,
     skill: string[]
-    feeling:string,
+    feeling ?:string,
 }
 
 export interface ModalProps {
     handleModal: (postId: any) => void;
     project: IProject;
-    
-  }
+}

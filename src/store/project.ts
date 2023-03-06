@@ -6,6 +6,7 @@ import MyProject3 from '../assets/project3.png'
 import MyProject4 from '../assets/project4.png'
 import MyProject5 from '../assets/project5.png'
 import MyProjectChat from '../assets/project-chat.png'
+import MyProject7 from '../assets/project-e.png'
 
 
 export const recoilModal = atom({
@@ -30,7 +31,7 @@ export const recoilProjects = atom<IProject[]>({
         ],
         gitUrl: "https://github.com/choiSeokYoon/portfolio",
         webUrl: "https://github.com/choiSeokYoon/choiSeokYoon",
-          skill: ["Scss", "TypeScript", "React", "Recoil", "Swiper"],
+        skill: ["Scss", "TypeScript", "React", "Recoil", "Swiper"],
         feeling:""
     },
     {
@@ -62,7 +63,7 @@ export const recoilProjects = atom<IProject[]>({
       ],
       gitUrl: "https://github.com/choiSeokYoon/FoodRecipe",
       webUrl: "https://github.com/choiSeokYoon/choiSeokYoon",
-        skill: ["Scss", "React", "Recoil", "Swiper"],
+      skill: ["Scss", "React", "Recoil", "Swiper"],
       feeling:"",
       },
     
@@ -74,7 +75,7 @@ export const recoilProjects = atom<IProject[]>({
       tag: "Individual",
       descriptions: [
         "CartShop 프로젝트는 OpenAPI를 사용하여 만들어진 쇼핑몰 프로젝트입니다.",
-        "미디어쿼리를 이용하여 반응형으로 만들어졌습니다.",
+        "미디어쿼리를 이용하여 반응형으로 만들었습니다.",
         "또한 디테일 페이지에서 담은 아이템을 카트에 추가하면 해당 아이템의 금액과 수량을 반영하여 표시합니다.",
         "이 프로젝트에서는 카테고리를 만들어서 이미 존재하는 API 주소와 연동하여 사용했습니다.",
       ],
@@ -107,7 +108,6 @@ export const recoilProjects = atom<IProject[]>({
       tag: "Academy",
       descriptions: [
         "pofo 웹 사이트를 클론코딩한 프로젝트 입니다. "
-        
       ],
       gitUrl: "https://github.com/choiSeokYoon/vue-todoapp-clone",
       webUrl: "https://github.com/choiSeokYoon/choiSeokYoon",
@@ -116,7 +116,7 @@ export const recoilProjects = atom<IProject[]>({
     },
     {
       id: 7,
-      imgUrl: MyProject3,
+      imgUrl: MyProject7,
       name: "경제배움e (관공서)",
       period: "12일",
       tag: "Academy",

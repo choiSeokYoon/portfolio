@@ -33,7 +33,7 @@ export default function Modal({ project, handleModal }: ModalProps) {
               </div>
             </div>
             <ul className="modal_descriptions">
-              <h3>설명</h3>
+              <h3>프로젝트 설명</h3>
               {project.descriptions.map((description, idx) => (
                 <p key={idx}>{description}</p>
               ))}
