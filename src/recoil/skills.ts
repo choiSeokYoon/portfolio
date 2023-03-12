@@ -46,10 +46,6 @@ export const recoilSkill = atom<ISkill[]>({
       imgUrl: recoilImg,
     },
     {
-      name: "VUE",
-      imgUrl: vueImg,
-    },
-    {
       name: "NODE",
       imgUrl: nodeImg,
     },

@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination, Autoplay } from "swiper";
 import { useRecoilValue } from "recoil";
-import { recoilProjects } from "./../../store/project";
+import { recoilProjects } from "./../../recoil/project";
 
 export default function Slide() {
   const projects = useRecoilValue(recoilProjects);

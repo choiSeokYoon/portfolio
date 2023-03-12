@@ -2,7 +2,7 @@ import React from "react";
 import "./Project.scss";
 import Slide from "./../components/slide/Slide";
 import { useRecoilValue } from "recoil";
-import { recoilProjects } from "./../store/project";
+import { recoilProjects } from "./../recoil/project";
 import { useState } from "react";
 import Modal from "../components/modal/Modal";
 import { motion } from "framer-motion";

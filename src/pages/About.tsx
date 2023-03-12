@@ -2,7 +2,7 @@ import "./About.scss";
 import { motion } from "framer-motion";
 import { showHideChild, showHide } from "./Home";
 import { useRecoilValue } from "recoil";
-import { recoilSkill, recoilTool } from "./../store/skills";
+import { recoilSkill, recoilTool } from "./../recoil/skills";
 
 export default function About() {
   const skills = useRecoilValue(recoilSkill);
