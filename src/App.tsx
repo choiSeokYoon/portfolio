@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 import Header from "./components/header/Header";
 import About from "./pages/About";
@@ -9,7 +9,7 @@ import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <RecoilRoot>
         <Routes>
@@ -19,7 +19,7 @@ function App() {
         </Routes>
       </RecoilRoot>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -4,10 +4,10 @@ import './Home.scss'
 
 export const showHide = {
     start: {
-        opacity:0,
-        transition:{
-            duration:0,
-            traggerChildren:0.5,
+        opacity: 0,
+        transition: {
+            duration: 0,
+            traggerChildren: 0.5,
         },
     },
     end: {
@@ -33,7 +33,7 @@ export default function Home() {
     return (
         <div className='home'>
             <div className='container'>
-                <motion.div 
+                <motion.div
                     className='home_box' variants={showHide} initial="start" animate="end"
                 >
                     <motion.h2 variants={showHideChild}>
@@ -41,11 +41,11 @@ export default function Home() {
                     </motion.h2>
                     <motion.div className='line' variants={showHideChild}></motion.div>
                     <motion.span className='job' variants={showHideChild}>Web Front-end Developer</motion.span>
-                    <motion.div 
-                    className='project_btn'
-                    variants={showHideChild}
-                    whileHover={{scale: 1.1}}
-                    transition={{type: "spring", stiffness: 1000, damping:5}}
+                    <motion.div
+                        className='project_btn'
+                        variants={showHideChild}
+                        whileHover={{ scale: 1.1 }}
+                        transition={{ type: "spring", stiffness: 1000, damping: 5 }}
                     >
                         <Link to="project">project</Link>
                     </motion.div>

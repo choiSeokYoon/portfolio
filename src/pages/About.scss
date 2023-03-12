@@ -1,4 +1,4 @@
-.about_box{
+.about_box {
     width: 100%;
     height: auto;
     padding-top: 100px;
@@ -7,110 +7,127 @@
     padding-left: 100px;
     padding-right: 100px;
     flex-direction: column;
+
     @media screen and (max-width:700px) {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .about_title{
+
+    .about_title {
         margin-top: 20px;
         font-size: 2rem;
         text-align: center;
         font-weight: bold;
         margin-bottom: 4rem;
-        h2{
-            
-        }
+
+        h2 {}
     }
-    .introduction{
-        
-        .about_text{
+
+    .introduction {
+
+        .about_text {
             position: relative;
             display: flex;
+
             @media screen and (max-width:1000px) {
                 flex-direction: column;
             }
-            .about_me{
-            flex: 50%;
-                h3{  
-                    
-                }
-                .introduction_text{
+
+            .about_me {
+                flex: 50%;
+
+                h3 {}
+
+                .introduction_text {
                     padding: 1.5rem;
-                    
-                    p{
+
+                    p {
                         font-size: .9rem;
                         line-height: 200%;
+
                         @media screen and (max-width:700px) {
                             font-size: .7rem;
                         }
-                        
+
                     }
-                    div{
+
+                    div {
                         display: flex;
                         padding-top: 1rem;
                         justify-content: end;
+
                         @media screen and (max-width:700px) {
                             flex-direction: column;
-                   
-                            }
-                        p{
+
+                        }
+
+                        p {
                             padding: 0 1rem;
                             text-align: right;
                         }
                     }
                 }
-                
+
             }
-            .education{
+
+            .education {
                 flex: 50%;
-                h3{
-                }
-                .education_text{
+
+                h3 {}
+
+                .education_text {
                     padding: 1.5rem;
-                    p{
+
+                    p {
                         font-size: .9rem;
                         line-height: 200%;
+
                         @media screen and (max-width:700px) {
                             font-size: .7rem;
                         }
                     }
                 }
-                
-                
+
+
             }
         }
-      
-        .skill, .tool{
+
+        .skill,
+        .tool {
             padding: 1rem;
-            
-            h3{
+
+            h3 {
                 font-size: 2rem;
                 padding-bottom: .5rem;
-                border-bottom: 1px solid #000;  
+                border-bottom: 1px solid #000;
+
                 @media screen and (max-width:700px) {
-                           text-align: center;
-                   
-                            }          
+                    text-align: center;
+
+                }
             }
-            ul{
+
+            ul {
                 padding-top: 1rem;
                 display: grid;
                 grid-template-columns: repeat(7, 1fr);
                 gap: 2rem;
                 text-align: center;
+
                 @media screen and (max-width:1000px) {
                     grid-template-columns: repeat(5, 1fr)
-                    
                 }
+
                 @media screen and (max-width:1000px) {
                     grid-template-columns: repeat(3, 1fr)
-                    
                 }
-                img{
+
+                img {
                     width: 50px;
-                    height: 50px;  
+                    height: 50px;
                 }
-                p{
+
+                p {
                     font-size: .7rem;
                     padding: .5rem 0;
                 }
@@ -119,7 +136,7 @@
     }
 }
 
-.sub_title{
+.sub_title {
     text-align: center;
     font-size: 2rem;
     border-bottom: 1px solid #000;
