@@ -75,7 +75,7 @@ export const recoilProjects = atom<IProject[]>({
       tag: "Individual",
       descriptions: [
         "CartShop 프로젝트는 OpenAPI를 사용하여 만들어진 쇼핑몰 프로젝트입니다.",
-        "미디어쿼리를 이용하여 반응형으로 만들었습니다.",
+        "미디어쿼리와 useMediaQuery를 이용하여 반응형으로 만들었습니다.",
         "디테일 페이지에서 담은 아이템을 카트에 추가하면 해당 아이템의 금액과 수량을 반영하여 표시합니다.",
         "카테고리를 존재하는 API 주소와 연동하여 만들었습니다.",
       ],
