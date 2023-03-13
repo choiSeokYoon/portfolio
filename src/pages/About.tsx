@@ -43,7 +43,7 @@ export default function About() {
                 <div className="education_text">
                   <p>대진대학교 2014.03 ~ 2016.02 //중퇴 (작곡과)</p>
                   <p>학점은행제 2022.09 ~ //진행중 (컴퓨터 공학)</p>
-                  <p>국비학원 2022.10 ~ //진행중 </p>
+                  <p>국비 프론트엔드 양성 과정 2022.10 ~ //진행중 </p>
                 </div>
 
               </motion.li>
