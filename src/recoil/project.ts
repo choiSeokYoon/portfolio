@@ -55,7 +55,7 @@ export const recoilProjects = atom<IProject[]>({
       tag: "Individual",
       descriptions: [
         "Food Recipe 프로젝트는 공공데이터 API를 사용하여 만든 프로젝트입니다. Recoil을 처음 적용한 프로젝트입니다.",
-        "미디어쿼리를 이용하여 반응형으로 만들어졌습니다.",
+        "미디어쿼리를 이용하여 반응형으로 만들었습니다.",
         "localStorage를 사용하여 간단한 회원가입 기능을 만들었습니다",
         "Swiper와 Chart.js를 이용해여 페이지를 좀 더 꾸며냈습니다.",
         "검색 기능, 카테고리 및 페이지네이션 기능이 구현되어 있습니다. 사용자가 원하는 레시피를 쉽게 찾을 수 있습니다.",
