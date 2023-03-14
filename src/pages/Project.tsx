@@ -7,7 +7,7 @@ import { useState } from "react";
 import Modal from "../components/modal/Modal";
 import { motion } from "framer-motion";
 import { showHideChild, showHide } from "./Home";
-
+import ImgBoder from "../assets/project_box.png"
 export default function Project() {
   const projects = useRecoilValue(recoilProjects);
   const [active, setActive] = useState(0);
@@ -68,7 +68,10 @@ export default function Project() {
                   handleModal(project.id);
                 }}
               >
-                <img src={project.imgUrl} alt="프로젝트 이미지" />
+                <div className="img_box">
+                  <img src={project.imgUrl} alt="프로젝트 이미지"  className="project_img"/>
+                  <img src={require("../assets/project_box.png")} alt="프로젝트 이미지 테두리" className="img_border"/>
+                </div>
                 <p className="img_text">click !</p>
               </li>
               {selectedPostId === project.id && modal && (
