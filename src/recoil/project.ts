@@ -76,12 +76,12 @@ export const recoilProjects = atom<IProject[]>({
       descriptions: [
         "CartShop 프로젝트는 OpenAPI를 사용하여 만들어진 쇼핑몰 프로젝트입니다.",
         "미디어쿼리와 useMediaQuery를 이용하여 반응형으로 만들었습니다.",
-        "디테일 페이지에서 담은 아이템을 카트에 추가하면 해당 아이템의 금액과 수량을 반영하여 표시합니다.",
-        "카테고리를 존재하는 API 주소와 연동하여 만들었습니다.",
+        "디테일페이지에서 담은 아이템을 카트에 추가하면 해당 아이템의 금액과 수량을 반영하여 표시합니다.",
+        "props로만 만들었던 프로젝트를 Recoil를 추가 하여 상태관리와 jsx에서 TypeScript로 마이그레이션 했습니다."
       ],
       gitUrl: "https://github.com/choiSeokYoon/shopProject",
       webUrl: "https://choiseokyoon.github.io/shopProject/",
-      skill: ["Scss", "React"],
+      skill: ["Scss", "React", "Recoil", "TypeScript"],
       feeling: "",
     },
     {
