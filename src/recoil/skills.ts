@@ -24,7 +24,7 @@ export const recoilSkill = atom<ISkill[]>({
       imgUrl: sassImg,
     },
     {
-      name: "StyleComponent",
+      name: "Style Component",
       imgUrl: styleComponentImg,
     },
     {
