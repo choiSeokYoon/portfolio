@@ -42,7 +42,7 @@ export default function Project() {
       animate="end"
     >
       <motion.h1 className="title" variants={showHideChild}>
-        🍖PROJECT🍖
+        PROJECT
       </motion.h1>
       <motion.div variants={showHideChild}>
         <Slide />

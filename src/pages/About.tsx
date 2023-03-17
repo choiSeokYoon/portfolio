@@ -17,7 +17,7 @@ export default function About() {
           animate="end"
         >
           <div className="about_title">
-            <motion.h2 variants={showHideChild}>⚽ABOUT ME⚽</motion.h2>
+            <motion.h2 variants={showHideChild}>ABOUT ME</motion.h2>
           </div>
           <ul className="introduction">
             <div className="about_text">
