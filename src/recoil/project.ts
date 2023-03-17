@@ -55,6 +55,7 @@ export const recoilProjects = atom<IProject[]>({
       tag: "Individual",
       descriptions: [
         "Food Recipe 프로젝트는 공공데이터 API를 사용하여 만든 프로젝트입니다. Recoil을 처음 적용한 프로젝트입니다.",
+        "Jsx에서 TypeScript로 마이그레이션 했습니다.",
         "미디어쿼리를 이용하여 반응형으로 만들었습니다.",
         "localStorage를 사용하여 간단한 회원가입 기능을 만들었습니다",
         "Swiper와 Chart.js를 이용해여 페이지를 좀 더 꾸며냈습니다.",
@@ -63,7 +64,7 @@ export const recoilProjects = atom<IProject[]>({
       ],
       gitUrl: "https://github.com/choiSeokYoon/FoodRecipe",
       webUrl: "https://choiseokyoon.github.io/FoodRecipe/",
-      skill: ["Scss", "React", "Recoil", "localStorage", "Chart.js", "Swiper"],
+      skill: ["Scss","TypeScript", "React", "Recoil", "LocalStorage", "Chart.js", "Swiper"],
       feeling: "",
     },
 
@@ -75,9 +76,10 @@ export const recoilProjects = atom<IProject[]>({
       tag: "Individual",
       descriptions: [
         "CartShop 프로젝트는 OpenAPI를 사용하여 만들어진 쇼핑몰 프로젝트입니다.",
+        "props로만 만들었던 프로젝트를 Recoil를 추가 하여 상태관리와 Jsx에서 TypeScript로 마이그레이션 했습니다.",
         "미디어쿼리와 useMediaQuery를 이용하여 반응형으로 만들었습니다.",
         "디테일페이지에서 담은 아이템을 카트에 추가하면 해당 아이템의 금액과 수량을 반영하여 표시합니다.",
-        "props로만 만들었던 프로젝트를 Recoil를 추가 하여 상태관리와 jsx에서 TypeScript로 마이그레이션 했습니다."
+       
       ],
       gitUrl: "https://github.com/choiSeokYoon/shopProject",
       webUrl: "https://choiseokyoon.github.io/shopProject/",

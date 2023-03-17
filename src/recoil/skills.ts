@@ -14,6 +14,7 @@ import vsCodeImg from "../assets/skills/visual_studio_code_icon.png";
 import vueImg from "../assets/skills/vue_icon.png";
 import recoilImg from "../assets/skills/recoil_icon.svg";
 import jqueryImg from "../assets/skills/jquery_icon.png";
+import styleComponentImg from "../assets/skills/style300.png"
 
 export const recoilSkill = atom<ISkill[]>({
   key: "recoilSkill",
@@ -21,6 +22,10 @@ export const recoilSkill = atom<ISkill[]>({
     {
       name: "SASS",
       imgUrl: sassImg,
+    },
+    {
+      name: "StyleComponent",
+      imgUrl: styleComponentImg,
     },
     {
       name: "jquery",
