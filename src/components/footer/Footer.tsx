@@ -4,7 +4,7 @@ import emailImg from "../../assets/email.png";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer_box">
         <div className="sns">
           <a href="https://github.com/choiSeokYoon">
@@ -17,6 +17,6 @@ export default function Footer() {
         <div className="copyright">© 2023 seoklike</div>
         <div className="madeby">Made by yoon with</div>
       </div>
-    </div>
+    </footer>
   );
 }

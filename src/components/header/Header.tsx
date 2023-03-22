@@ -4,7 +4,7 @@ import './Header.scss'
 
 export default function Header() {
     return (
-        <div className='header'>
+        <header className='header'>
             <div className='container'>
                 <div className='nav'>
                     <div className='logo'>
@@ -18,7 +18,7 @@ export default function Header() {
                 </div>
             </div>
             
-        </div>
+        </header>
     )
 }
 

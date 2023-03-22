@@ -31,7 +31,7 @@ export const showHideChild = {
 };
 export default function Home() {
     return (
-        <div className='home'>
+        <main className='home'>
             <div className='container'>
                 <motion.div
                     className='home_box' variants={showHide} initial="start" animate="end"
@@ -51,6 +51,6 @@ export default function Home() {
                     </motion.div>
                 </motion.div>
             </div>
-        </div>
+        </main>
     )
 }
