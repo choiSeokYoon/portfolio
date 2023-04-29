@@ -33,20 +33,7 @@ export const recoilProjects = atom<IProject[]>({
       skill: ["Scss", "TypeScript", "React", "Recoil", "Swiper"],
       feeling: "",
     },
-    {
-      id: 2,
-      imgUrl: MyProject3,
-      name: "게시판 프로젝트",
-      period: "진행중",
-      tag: "Individual",
-      descriptions: [
-        "백엔드와 프론트가 어떤식으로 연동되는지 알아가기 위해 만든 프로젝트입니다.",
-        "처음부터 기획한 프로젝트가 아니기 때문에 로그인 기능을 구현하고 이후에 기능을 하나씩 추가하는 방식으로 개발하는 중이고 이를 통해 단계적인 개발 과정을 경험하고 있습니다.",
-      ],
-      gitUrl: "https://github.com/choiSeokYoon/react-express-login",
-      skill: ["Scss", "React", "Recoil", "express", "mongoDB"],
-      feeling: "",
-    },
+   
     {
       id: 3,
       imgUrl: MyProject2,
@@ -121,6 +108,7 @@ export const recoilProjects = atom<IProject[]>({
       descriptions: [
         "관공서의 웹사이트를 선택하여 클론한 웹사이트입니다.",
         "슬라이드를 구현했고 서브페이지도 제작 했습니다.",
+        
       ],
       gitUrl: "https://github.com/choiSeokYoon/first-project-e-learning",
       webUrl: "https://choiseokyoon.github.io/first-project-e-learning/",
@@ -134,8 +122,8 @@ export const recoilProjects = atom<IProject[]>({
       period: "5일",
       tag: "Individual",
       descriptions: [
-        "백엔드가 궁금해서 시작한 프로젝트이며 node교과서라는 책을 구입하여 공부하고 만든 채팅 웹 입니다.",
-        "Socket.io를 이용하여 클라이언트와 서버 간에 실시간 통신을 구현하였습니다. 또한 Express 프레임워크를 이용하여 서버를 구축하였습니다.",
+        "서버와 클라이언트가 어떤식으로 소통하는지 알고 싶어 시작한 프로젝트입니다.",
+        "Socket.io를 이용하여 클라이언트와 서버 간에 실시간 통신을 구현하였고, 이를 통해 실시간으로 데이터를 주고 받는 방법을 알게 됐습니다.",
       ],
       gitUrl: "https://github.com/choiSeokYoon/node-soketio-chat",
       skill: ["Sass", "ejs", "express", "soket.io", "jQuery", "Javascript"],

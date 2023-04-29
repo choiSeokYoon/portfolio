@@ -25,7 +25,7 @@ export default function About() {
                 <h3 className="sub_title">- about me</h3>
                 <div className="introduction_text">
                   <p>
-                    안녕하세요 신입 개발자 최석윤 입니다. <br />
+                    안녕하세요 웹개발자 최석윤 입니다. <br />
                     저는 어떤 기술이든 두려워하지 않고 도전하는 자세로 개발에 임합니다.<br />
                     React를 이용하여 웹 개발을 하고 있으며, 최근에는 node와 TypeScript에 관심을 가지고 있습니다.
                     프로젝트를 진행하면서 새로운 도전을 통해 사용하는 기술들을 좀 더 깊이 있게 배우고 활용하고 싶습니다.<br />
@@ -43,7 +43,8 @@ export default function About() {
                 <div className="education_text">
                   <p>대진대학교 2014.03 ~ 2016.02 //중퇴 (작곡과)</p>
                   <p>학점은행제 2022.09 ~ //진행중 (컴퓨터 공학)</p>
-                  <p>국비 프론트엔드 양성 과정 2022.10 ~ // 2023.03.22 진행중 </p>
+                  <p>국비 프론트엔드 양성 과정 2022.10 ~ 2023.03 </p>
+                  <p>텔레트론 2023.03.29 ~ //프론트엔드 개발</p>
                 </div>
 
               </motion.li>

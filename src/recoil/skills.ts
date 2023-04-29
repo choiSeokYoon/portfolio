@@ -20,7 +20,7 @@ export const recoilSkill = atom<ISkill[]>({
   key: "recoilSkill",
   default: [
     {
-      name: "SASS",
+      name: "SCSS",
       imgUrl: sassImg,
     },
     {
